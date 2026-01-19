@@ -1,4 +1,7 @@
 # React + Vite
+## Deployment
+
+// Task 14: Application deployed to Vercel
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
