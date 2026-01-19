@@ -1,19 +1,84 @@
-# React + Vite
-## Deployment
+# e-Wallet - Digital Wallet Application
 
-// Task 14: Application deployed to Vercel
+A modern, responsive Single Page Application (SPA) for managing your digital wallet with transaction tracking, analytics, and a beautiful UI.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Features
 
-Currently, two official plugins are available:
+- **Dashboard**: View total balance, income, expenses, and spending trends chart
+- **Transaction History**: Scrollable list of all transactions with categories and dates
+- **Add Transactions**: Modal form to add income/expense with validation
+- **Virtual Card**: Beautiful card representation with balance
+- **Responsive Design**: Works seamlessly on mobile and desktop
+- **Local Storage**: Data persists in browser's localStorage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
 
-## React Compiler
+- **React.js** with Vite
+- **Tailwind CSS** for styling
+- **Lucide React** for icons
+- **Recharts** for data visualization
+- **Context API** for state management
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📦 Installation
 
-## Expanding the ESLint configuration
+1. Install dependencies:
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Start the development server:
+```bash
+npm run dev
+```
+
+3. Open your browser and navigate to the URL shown in the terminal (usually `http://localhost:5173`)
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+## 📁 Project Structure
+
+```
+e-wallet/
+├── src/
+│   ├── components/         # React components
+│   │   ├── AddTransaction.jsx
+│   │   ├── Dashboard.jsx
+│   │   ├── Navigation.jsx
+│   │   ├── Settings.jsx
+│   │   ├── TransactionHistory.jsx
+│   │   └── VirtualCard.jsx
+│   ├── context/            # Context API for state management
+│   │   └── WalletContext.jsx
+│   ├── App.jsx             # Main App component
+│   ├── main.jsx            # Entry point
+│   └── index.css           # Tailwind CSS imports
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+└── postcss.config.js
+```
+
+## 🎯 Usage
+
+1. **View Dashboard**: See your total balance, income, expenses, and spending trends
+2. **Add Transactions**: Click the "Add Transaction" button to add income or expenses
+3. **View History**: Navigate to "Transactions" to see all your transaction history
+4. **Settings**: Access settings to view wallet information and manage data
+
+## ✨ Features in Detail
+
+- **Form Validation**: All transaction forms include validation for required fields
+- **Category System**: Transactions are organized by categories (Food, Transport, Salary, etc.)
+- **Data Persistence**: All transactions are saved to localStorage
+- **Responsive Navigation**: Bottom navigation on mobile, sidebar on desktop
+- **Visual Charts**: Spending trends displayed with Recharts
+- **Transaction Management**: Delete transactions directly from the history
+
+Enjoy managing your finances with e-Wallet! 💰
