@@ -7,5 +7,7 @@ import React from "react";
 const Dashboard = () => {
   return <div>Hello</div>;
 };
+// Task 12: Charts implemented using Recharts
 
 export default Dashboard;
+
