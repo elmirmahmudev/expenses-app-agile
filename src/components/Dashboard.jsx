@@ -1,3 +1,6 @@
+// Task 6: Dashboard UI component
+
+
 import React from "react";
 
 const Dashboard = () => {
